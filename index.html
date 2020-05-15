@@ -4,7 +4,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Boa Forma - Seu espaço de saúde</title>
+    
     <link rel="icon" href="images/fav.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -12,7 +14,143 @@
   </head>
 
   <body>
+    <header>
+      <ul class="side-nav" id="menu-mobile">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#units">Unidades</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+
+      <div class="navbar-fixed">
+        <nav class="navbar z-depth-0">
+          <div class="nav-wrapper container">
+            <h1 class="logo_text">Boa Forma - Seu espaço de saúde</h1>
+
+            <a href=""><img class="logo_img" src="images/logo.png" alt="Boa Forma"></a>
+            
+            <ul class="right light hide-on-med-and-down">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#units">Unidades</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+
+            <a href="#" data-activates="menu-mobile" class="button-collapse right">
+              <i class="material-icons">menu</i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home block scrollspy" id="home">
+      <div class="row container banner">
+        <div class="col s12 center">
+          <h2 class="white-text">O melhor treinamento funcional da região</h2>
+          
+          <p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saúde
+            para quem busca melhorar o condicionamento e emagrecimento, além
+            de se divertir e desafiar-se. Quer experimentar?
+          </p>
+          
+          <div class="row">
+            <a class="btn btn-large blue-logo">Sobre nós</a>
+            <a class="btn btn-large white black-text">Contatto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about block scrollspy" id="about">
+      <div class="row container">
+        <div class="col s12 center">
+          <h2 class="light">Sobre nós</h2>
+        </div>
+
+        <div class="col s12 l6">
+          <p class="light">A Centro Boa Forma chegou a Itabuna e região trazendo um novo conceito em prevenção, 
+			      promoção e reabilitação da saúde. Localizada no centro da cidade, conta com fácil estacionamento, salas
+            amplas e climatizadas, ambiente confortável e seguro aos seus usuários. Suas instalações foram projetadas 
+            e equipadas sob medida, dentro dos padrões de acessibilidade, para acolher principalmente pessoas com limitações 
+            funcionais. O centro dispõe de uma equipe profissional qualificada e com experiência no mercado, prezando sempre 
+            por tratamentos individualizados e baseados em evidências cientificas. Localizada no centro da cidade, conta com 
+            fácil estacionamento, salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários.
+          </p>
+        </div>
+
+        <div class="col s12 l6">
+          <div class="carousel carousel-slider" data-indicators="true">
+            <a alt="Imagem institucional" href="#" class="carousel-item">
+              <img src="images/banner-01.jpg">
+            </a>
+
+            <a alt="Imagem institucional" href="#" class="carousel-item">
+              <img src="images/banner-02.jpg">
+            </a>
+
+            <a alt="Imagem institucional" href="#" class="carousel-item">
+              <img src="images/banner-03.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row blue-logo mission-vision-values">
+        <div class="container">
+          <article class="item col s12 m4 center">
+            <span class="icon"><i class="material-icons medium">directions_run</i></span>
+            <h3 class="light">Missão</h3>
+            <p class="light">Promover a saúde e bem-estar dos clientes com ações de 
+              prevenção, promoção e reabilitação, através de tratamentos eficazes e 
+              humanizados em fisioterapia e suas vertentes.
+            </p>	
+          </article>
+
+          <article class="item col s12 m4 center">
+            <span class="icon"><i class="material-icons medium">visibility</i></span>
+            <h3 class="light">Visão</h3>
+            <p class="light">Tornar-se referência no cenário estadual, buscando a excelência 
+              dos serviços prestados, além de promover o desenvolvimento técnico-científico de 
+              sua equipe e da sociedade.
+            </p>	
+          </article>
+
+          <article class="item col s12 m4 center">
+            <span class="icon"><i class="material-icons medium">grade</i></span>
+            <h3 class="light">Valores</h3>
+            <p class="light">
+              Agir com ética frente aos clientes e colaboradores.<br>
+              Tornar o ambiente de trabalho o mais familiar possível.<br>
+              Priorizar a qualidade e excelência do atendimento, valorizando e qualificando a equipe.
+            </p>	
+          </article>
+        </div>
+      </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".button-collapse").sideNav();
+        $(".scrollspy").scrollSpy({
+          scrollOffset: 0
+        });
+        $(".carousel.carousel-slider").carousel({
+          fullWidth: true
+        });
+      });
+
+      $(window).on("scroll", function() {
+        if($(window).scrollTop() > 100) {
+          $(".navbar").addClass("nav-color");
+        } else {
+          $(".navbar").removeClass("nav-color");
+        }
+      });
+    </script>
   </body>
 </html>
