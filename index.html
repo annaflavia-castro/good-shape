@@ -321,6 +321,194 @@
             <a class="btn blue-logo modal-action modal-close">Sair</a>
           </div>
         </div>
+
+        <div class="row center btn-schedule">
+          <a href="#schedule-modal" class="btn btn-large blue-logo modal-trigger">
+            <i class="material-icons left">timer</i>
+            Quadro de horários
+          </a>
+        </div>
+
+        <div class="modal" id="schedule-modal">
+          <div class="modal-content">
+            <h5 class="light">Quadro de horários</h5>
+
+            <ul class="tabs">
+              <li class="tab col s3">
+                <a href="#table-pilates">Pilates</a>
+              </li>
+              <li class="tab col s3">
+                <a href="#table-bodybuilder">Musculação</a>
+              </li>
+              <li class="tab col s3">
+                <a href="#table-fitness">Fitness</a>
+              </li>
+              <li class="tab col s3">
+                <a href="#table-martial-arts">Artes Marciais</a>
+              </li>
+            </ul>
+
+            <table class="striped responsive-table" id="table-pilates">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Segunda-feira</th>
+                  <th>Terça-feira</th>
+                  <th>Quarta-feira</th>
+                  <th>Quinta-feira</th>
+                  <th>Sexta-feira</th>
+                  <th>Sábado</th>
+                  <th>Domingo</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>6h às 10h</td>
+                  <td></td>
+                  <td>Pilates</td>
+                  <td></td>
+                  <td>Pilates</td>
+                  <td></td>
+                  <td></td>
+                  <td>Pilates</td>
+                </tr>
+
+                <tr>
+                  <td>12h às 22h</td>
+                  <td>Pilates</td>
+                  <td></td>
+                  <td>Pilates</td>
+                  <td></td>
+                  <td>Pilates</td>
+                  <td>Pilates</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="striped responsive-table" id="table-bodybuilder">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Segunda-feira</th>
+                  <th>Terça-feira</th>
+                  <th>Quarta-feira</th>
+                  <th>Quinta-feira</th>
+                  <th>Sexta-feira</th>
+                  <th>Sábado</th>
+                  <th>Domingo</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>6h às 10h</td>
+                  <td></td>
+                  <td>Musculação</td>
+                  <td></td>
+                  <td>Musculação</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>12h às 22h</td>
+                  <td>Musculação</td>
+                  <td></td>
+                  <td>Musculação</td>
+                  <td></td>
+                  <td>Musculação</td>
+                  <td>Musculação</td>
+                  <td>Musculação</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="striped responsive-table" id="table-fitness">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Segunda-feira</th>
+                  <th>Terça-feira</th>
+                  <th>Quarta-feira</th>
+                  <th>Quinta-feira</th>
+                  <th>Sexta-feira</th>
+                  <th>Sábado</th>
+                  <th>Domingo</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>6h às 10h</td>
+                  <td>Fitness</td>
+                  <td></td>
+                  <td>Fitness</td>
+                  <td></td>
+                  <td>Fitness</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>12h às 22h</td>
+                  <td></td>
+                  <td>Fitness</td>
+                  <td></td>
+                  <td>Fitness</td>
+                  <td></td>
+                  <td>Fitness</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="striped responsive-table" id="table-martial-arts">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Segunda-feira</th>
+                  <th>Terça-feira</th>
+                  <th>Quarta-feira</th>
+                  <th>Quinta-feira</th>
+                  <th>Sexta-feira</th>
+                  <th>Sábado</th>
+                  <th>Domingo</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>6h às 10h</td>
+                  <td>Artes Marciais</td>
+                  <td>Artes Marciais</td>
+                  <td></td>
+                  <td>Artes Marciais</td>
+                  <td>Artes Marciais</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>12h às 22h</td>
+                  <td></td>
+                  <td></td>
+                  <td>Artes Marciais</td>
+                  <td></td>
+                  <td></td>
+                  <td>Artes Marciais</td>
+                  <td>Artes Marciais</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="modal-footer">
+            <a class="btn blue-logo modal-action modal-close">Sair</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -336,6 +524,7 @@
           fullWidth: true
         });
         $(".modal").modal();
+        $("ul.tabs").tabs();
       });
 
       $(window).on("scroll", function() {

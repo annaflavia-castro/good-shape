@@ -124,6 +124,10 @@ html, body {
   line-height: 2rem;
 }
 
+.services .btn-schedule {
+  padding-bottom: 20px;
+}
+
 nav {
   color: #fff;
   width: 100%;
@@ -158,6 +162,28 @@ nav i.material-icons {
 .side-nav li>a {
   color: #fff;
   font-weight: 400;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.tabs {
+  background-color: rgba(221, 221, 221, 0.87);
+}
+
+.tabs .tab a {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #2DC7D0;
+}
+
+.tabs .indicator {
+  background-color: #2DC7D0;
 }
 
 @media only screen and (max-width: 480px) {
