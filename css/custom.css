@@ -102,6 +102,28 @@ html, body {
   text-align: center;
 }
 
+.services {
+  background-image: url('../images/crossword.png');
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.services h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 2px solid #2DC7D0;
+  margin: 15px auto;
+}
+
+.services p {
+  line-height: 2rem;
+}
+
 nav {
   color: #fff;
   width: 100%;
