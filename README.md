@@ -1,7 +1,7 @@
 # good-shape
 Institutional health website developed with Materialize and Jquery.
 
-## Project Structure
+# Project Structure
 
 <h3>Design</h3>
 <ul> 
@@ -17,7 +17,7 @@ Institutional health website developed with Materialize and Jquery.
   <li>Jquery</li>  
 </ul>
 
-<h3>Website</h3>
+# Website
 
 ![ScreenShot](https://github.com/annaflavia-castro/good-shape/blob/master/images/home.png)
 ![ScreenShot](https://github.com/annaflavia-castro/good-shape/blob/master/images/about.png)
