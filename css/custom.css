@@ -106,13 +106,13 @@ html, body {
   background-image: url('../images/crossword.png');
 }
 
-.services h2 {
+.services h2, .units h2 {
   font-size: 2rem;
   color: #212121;
   text-transform: uppercase;
 }
 
-.services h2::after {
+.services h2::after, .units h2::after {
   content: '';
   display: block;
   width: 100px;
@@ -120,12 +120,16 @@ html, body {
   margin: 15px auto;
 }
 
-.services p {
+.services p, .units p {
   line-height: 2rem;
 }
 
 .services .btn-schedule {
   padding-bottom: 20px;
+}
+
+.units {
+  background-image: url('../images/crossword.png');
 }
 
 nav {
