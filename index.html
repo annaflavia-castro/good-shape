@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
 
   <body>
     <header>
       <ul class="side-nav" id="menu-mobile">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#units">Unidades</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a class="hide-menu" href="#home">Home</a></li>
+        <li><a class="hide-menu" href="#about">Sobre</a></li>
+        <li><a class="hide-menu" href="#services">Serviços</a></li>
+        <li><a class="hide-menu" href="#units">Unidades</a></li>
+        <li><a class="hide-menu" href="#contact">Contato</a></li>
       </ul>
 
       <div class="navbar-fixed">
@@ -57,8 +58,8 @@
           </p>
           
           <div class="row">
-            <a class="btn btn-large blue-logo">Sobre nós</a>
-            <a class="btn btn-large white black-text">Contatto</a>
+            <a href="#about" class="btn btn-large blue-logo">Sobre nós</a>
+            <a href="#contact" class="btn btn-large white black-text">Contatto</a>
           </div>
         </div>
       </div>
@@ -67,7 +68,7 @@
     <section class="about block scrollspy" id="about">
       <div class="row container">
         <div class="col s12 center">
-          <h2 class="light">Sobre nós</h2>
+          <h2 class="light title">Sobre nós</h2>
         </div>
 
         <div class="col s12 l6">
@@ -134,8 +135,8 @@
     <section class="services block scrollspy" id="services">
       <div class="row container">
         <div class="col s12 center">
-          <h2 class="light">Serviços</h2>
-          <p class="light"> Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de 
+          <h2 class="light title">Serviços</h2>
+          <p class="light paragraph"> Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de 
             acessibilidade, para acolher principalmente pessoas com limitações funcionais. A clínica dispõe 
             de uma equipe profissional qualificada e com experiência no mercado, prezando sempre por tratamentos
             individualizados e baseados em evidências científicas.
@@ -515,8 +516,8 @@
     <section class="units block scrollspy" id="units">
       <div class="row container">
         <div class="col s12 center">
-          <h2 class="light">Unidades</h2>
-          <p class="light">Para oferecer serviços de acordo com a realidade e necessidade de cada região do 
+          <h2 class="light title">Unidades</h2>
+          <p class="light paragraph">Para oferecer serviços de acordo com a realidade e necessidade de cada região do 
             Brasil, o Boa Forma possui unidades em quatro estados. Com atividades permanentes, os espaços físicos 
             buscam oferecer facilidade de acesso e atendimento de qualidade.
           </p>
@@ -602,6 +603,78 @@
       </div>
     </section>
 
+    <section class="contact block scrollspy" id="contact">
+      <div class="row container">
+        <div class="col s12 center">
+          <h2 class="light title">Contato</h2>
+        </div>
+
+        <div class="col s12 m6 l4 hide-on-med-only">
+          <div class="map transparent">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4715360935497!2d-46.65982228446578!3d-23.587416184669962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1589603552387!5m2!1spt-BR!2sbr" 
+              width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>          
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="informations white-text">
+            <h4>Endereço</h4>
+
+            <p class="light">Rua Paraíso, 123<br>
+            Centro, São Paulo - SP</p>
+            
+            <h4>Contatos</h4>
+
+            <p class="light">
+              (11) 99999-9999<br>
+              (11) 99999-9999<br>
+              (11) 99999-9999
+            </p>
+
+            <h4>Redes sociais</h4>
+
+            <p class="light">Fique por dentro das novidades, receba dicas ou simplesmente mostre ao mundo que você faz parte desse projeto sensacional!</p>
+            <a href="#" class="btn-floating blue-logo"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn-floating blue-logo"><i class="fa fa-google"></i></a>
+            <a href="#" class="btn-floating blue-logo"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="form white black-text">
+            <h4>Fale conosco</h4>
+
+            <p class="light">Dúvidas, críticas ou sugestões? Entre em contato conosco, seu feedback é muito importante.</p>
+            
+            <form action="" method="post">
+              <div class="input-field">
+                <input type="text" name="name" id="name">
+                <label for="name">Seu nome</label>
+              </div>
+
+              <div class="input-field">
+                <input type="email" name="email" id="email">
+                <label for="email">Seu e-mail</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" name="subject" id="subject">
+                <label for="subject">Assunto</label>
+              </div>
+
+              <div class="input-field">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Mensagem</label>
+              </div>
+
+              <button class="btn blue-logo" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src = "https://widget.sirena.app/get?token=8232cd23ec324607a11b05fb8df0e4f2"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -616,6 +689,14 @@
         });
         $(".modal").modal();
         $("ul.tabs").tabs();
+        $(".hide-menu").click(function() {
+          $(".button-collapse").sideNav("hide");
+        });
+        function autoplay() {
+          $(".carousel").carousel("next");
+          setTimeout(autoplay, 3500);
+        }
+        autoplay();
       });
 
       $(window).on("scroll", function() {

@@ -59,22 +59,26 @@ html, body {
   margin-top: 60px;
 }
 
-.about {
-  background-image: url('../images/crossword.png');
-}
-
-.about h2 {
-  font-size: 2rem;
+.title {
   color: #212121;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
-.about h2::after {
+.title::after {
   content: '';
   display: block;
   width: 100px;
   border-top: 2px solid #2DC7D0;
   margin: 15px auto;
+}
+
+.paragraph {
+  line-height: 1.8rem;
+}
+
+.about, .services, .units, .contact  {
+  background-image: url('../images/crossword.png');
 }
 
 .about p {
@@ -102,53 +106,49 @@ html, body {
   text-align: center;
 }
 
-.services {
-  background-image: url('../images/crossword.png');
-}
-
-.services h2, .units h2 {
-  font-size: 2rem;
-  color: #212121;
-  text-transform: uppercase;
-}
-
-.services h2::after, .units h2::after {
-  content: '';
-  display: block;
-  width: 100px;
-  border-top: 2px solid #2DC7D0;
-  margin: 15px auto;
-}
-
-.services p, .units p {
-  line-height: 2rem;
-}
-
 .services .btn-schedule {
   padding-bottom: 20px;
 }
 
-.units {
-  background-image: url('../images/crossword.png');
+.units article p {
+  line-height: 1.8rem;
 }
 
-nav {
-  color: #fff;
+.contact h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contact .map {
+  min-height: 560px;
+}
+
+.contact .map iframe {
   width: 100%;
-  height: 94px;
-  line-height: 94px;
+  min-height: 560px;
+  border: none;
+}
+
+.contact .informations {
+  background-color: rgb(88, 88, 88);
+  min-height: 560px;
+  padding: 30px;
+}
+
+.contact .form {
+  min-height: 560px;
+  padding: 30px;
 }
 
 nav.nav-extended .nav-wrapper {
   min-height: 94px;
-  height: auto;
 }
 
-nav i,
+nav, nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons {
-  display: block;
-  font-size: 24px;
+nav i.material-icons, 
+nav a.button-collapse i {
   height: 94px;
   line-height: 94px;
 }
@@ -156,7 +156,6 @@ nav i.material-icons {
 .navbar-fixed {
   position: absolute;
   height: 94px;
-  z-index: 997;
 }
 
 .side-nav {
