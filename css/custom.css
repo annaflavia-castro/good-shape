@@ -77,7 +77,7 @@ html, body {
   line-height: 1.8rem;
 }
 
-.about, .services, .units, .contact  {
+.about, .services, .units, .contact {
   background-image: url('../images/crossword.png');
 }
 
@@ -141,6 +141,26 @@ html, body {
   padding: 30px;
 }
 
+.depositions .title::after {
+  border-color: #fff;
+}
+
+.depositions img {
+  width: 100px;
+}
+
+.depositions h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.footer {
+  background-image: url('../images/bg-rodape.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+
 nav.nav-extended .nav-wrapper {
   min-height: 94px;
 }
@@ -179,7 +199,6 @@ nav a.button-collapse i {
   color: #fff;
   font-weight: bold;
 }
-
 
 .tabs .tab a:hover, .tabs .tab a.active {
   color: #2DC7D0;
