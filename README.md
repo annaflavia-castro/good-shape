@@ -3,14 +3,14 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/annaflavia-castro/creative-house.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/annaflavia-castro/good-shape.svg">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/annaflavia-castro/creative-house.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/annaflavia-castro/good-shape.svg">
   
-  <a href="https://github.com/annaflavia-castro/creative-house/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/annaflavia-castro/creative-house.svg"></a>
+  <a href="https://github.com/annaflavia-castro/good-shape/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/annaflavia-castro/good-shape.svg"></a>
   
-  <a href="https://github.com/annaflavia-castro/creative-house/blob/master/LICENSE">
+  <a href="https://github.com/annaflavia-castro/good-shape/blob/master/LICENSE">
     <img alt="GitHub license" src="https://img.shields.io/badge/license-MIT-success?style=flat"></a>
 </p>
 
